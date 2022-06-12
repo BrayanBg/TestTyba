@@ -1,0 +1,9 @@
+version: "1" 
+services:
+  app:
+    image: tybatest
+    container_name: nodeserver
+    restart: always 
+    build: ./
+    ports:
+      - "3000:3000"
